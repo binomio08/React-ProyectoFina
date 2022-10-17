@@ -21,7 +21,7 @@ const ItemListContainer = () => {
             console.log(error)
         });
     }, []);
-    console.log(items);
+
     return(
         <div className="container my-5">
             <ItemList items={items} />
