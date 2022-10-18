@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
     useEffect(() =>{
         const getProdut = () =>
             new Promise ((res, rej)=>{
-                const product = products.find((prod)=> prod.id === id || [])
+                const product = products.find((prod)=> prod.id === id );
                 setTimeout(()=> {                    
                     res(product)
                 }, 500)
