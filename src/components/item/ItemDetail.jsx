@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
 const ItemDetail = ({item}) => {
   const [cantidad, setCantidad] = useState(0);
@@ -21,7 +22,11 @@ const ItemDetail = ({item}) => {
           </h5>
           <p className="card-text text-center">U${item.precio}</p>
         </div>
-        <ItemCount stock={item.stock} initial={1}  onAdd={onAdd} /> 
+        {cantidad ===0 ?(
+          <ItemCount stock={item.stock} initial={1}  onAdd={onAdd} /> 
+        ): (
+          <Link to= "/cart" className="text-center"> <bottom className="btn btn-primary">Ir Al Carrito</bottom></Link>
+        )}
       </div>
       </div>
     </div>
