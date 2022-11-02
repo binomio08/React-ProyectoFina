@@ -1,12 +1,12 @@
 const products = [
-    {
-        id: '1',
-        nombre:"PC Ofimatica",
-        imagen:'https://res.cloudinary.com/dc8mx3c8d/image/upload/v1663428031/CoderMyNavbar/ofimatica_nqirls.jpg',
-        categoria: 'pc completa',
-        precio: '200',
-        stock: '8'
-    },
+    // {
+    //     id: '1',
+    //     nombre:"PC Ofimatica",
+    //     imagen:'https://res.cloudinary.com/dc8mx3c8d/image/upload/v1663428031/CoderMyNavbar/ofimatica_nqirls.jpg',
+    //     categoria: 'pc completa',
+    //     precio: '200',
+    //     stock: '8'
+    // },
 
     {
         id: '2',
